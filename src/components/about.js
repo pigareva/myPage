@@ -31,7 +31,8 @@ const About = ({ data }) => {
 
   return (
     <StyledSkewedSection id="about">
-      <StyledH1>About Me</StyledH1>
+      {/*<StyledH1>About Me</StyledH1>*/}
+      <StyledH1>Über mich</StyledH1>
       <StyledAboutContainer>
         {image && (
           <StyledStaticImageContainer>

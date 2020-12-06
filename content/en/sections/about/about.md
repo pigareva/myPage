@@ -3,11 +3,6 @@ about_image: './me.jpg'
 techs: ['Mobile first', 'Responsive design', 'Component library', 'Atomic design', 'SPA', 'PWA', 'Quality assurance', 'Browser compatibility', 'TDD', 'Accessibility', 'Web performance', 'REST API', 'German', 'English']
 ---
 
-* Web-Performance Optimierung für große Anwendungen, Meet-up React Cologne (Februar 2020)
-* Die Erste Stelle in „Google Speed Race Germany“ (2019)
-* Berufliche Weiterbildung Fortgeschrittene Programmierung mit React.js (Zertifikat, 2018)
-
-
-
-
-
+* Public talk "Web performance optimisation for bigger applications" at Meet-up React Cologne (February 2020)
+* First place in "Google Speed Race Germany“ with billiger-mietwagen.de (2019)
+* Certificate for "Advanced programming with React.js" (2018)

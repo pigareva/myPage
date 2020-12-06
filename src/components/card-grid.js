@@ -66,8 +66,6 @@ const CardGrid = ({ cards, description, title, id = null }) => {
     );
   });
 
-    console.log('id', id);
-
     return (
     <StyledSkewedSection id={id}>
       {title && <StyledH1>{title}</StyledH1>}

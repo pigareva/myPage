@@ -5,17 +5,17 @@ export const indexMenuLinks = [
     icon: 'cogs',
   },
   {
-    name: 'Projects',
+    name: 'Projekte',
     link: '/#projects',
     icon: 'laptop-code',
   },
   {
-    name: 'About',
+    name: 'Über mich',
     link: '/#about',
     icon: 'user-alt',
   },
   {
-    name: 'Contact',
+    name: 'Kontakt',
     link: '/#contact',
     icon: 'envelope',
   },

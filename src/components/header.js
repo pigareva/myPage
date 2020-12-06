@@ -77,7 +77,6 @@ const StyledNavLink = styled(Link)`
 `;
 
 const Header = ({ menuLinks }) => {
-  console.log('menuLinks', menuLinks);
   return (
       <StyledHeader>
         <StyledContainer>

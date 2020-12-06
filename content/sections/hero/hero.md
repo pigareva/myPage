@@ -5,7 +5,11 @@ cta_label: 'Hire me'
 cta_link: '/#contact'
 ---
 
-I've been working on IT projects for over 10 years. React and the modern frontend world are my passion. 
-I started my career in project management but noticed over the years that due to my technical background, I'm happier being a software engineer and since then have been working successfully as a frontend developer. 
-In some projects, I took over the responsibility to lead a whole team, including frontend architecture design and was a part of an agile team building successful products.
-In myself, you will find a proven expert in building performant and elegant applications (SPA) with React and JavaScript for your project.
+Olga zeichnet sich durch ihre Passion für React und neue Frontend Technologien aus und ist
+bereits seit über 10 Jahren im Projektgeschäft tätig. Sie startete ihre Karriere im
+Projektmanagement, bemerkte aber im Laufe der Jahre, dass ihr die Softwareentwicklung mehr
+liegt und ist seitdem erfolgreich als React Entwicklerin im Projektgeschäft tätig. Ebenso
+übernahm sie bereits in manchen Projekten die Verantwortung ein ganzes Team zu leiten, und
+hatte maßgeblichen Einfluss auf die Frontend Architektur. Olga ist eine ausgewiesene Expertin
+im Frontend, die es versteht performante und elegante Anwendungen (SPA) mit React und
+JavaScript zu erstellen.

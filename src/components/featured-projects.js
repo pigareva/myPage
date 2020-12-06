@@ -9,6 +9,7 @@ import { StyledH1, StyledH2 } from './_shared/styled-headings';
 import { contentBox, flexCenter, flexEnd } from './_shared/styled-mixins';
 import { StyledSection } from './_shared/styled-section';
 import cvGerman from '../assets/Olga_Piagareva.pdf';
+import cvEnglish from '../assets/Olga_Pigareva_en.pdf';
 
 const StyledFeaturedProject = styled.article`
   display: flex;
@@ -105,12 +106,11 @@ const StyledProjectTitle = styled(StyledContentLink)`
 const FeaturedProjects = ({ featured }) => {
   const featuredProjects = featured.map((project, index) => {
     // const coverImage = project.frontmatter.cover_image ? project.frontmatter.cover_image.childImageSharp.fluid : null;
-    console.log('project', project);
     const title = project.frontmatter.title;
     const demoLink = project.frontmatter.demo_link;
     const repoLink = project.frontmatter.repo_link;
     const duration = project.frontmatter.duration;
-    const demoLinkLabel = `featured project ${title} demo`;
+    // const demoLinkLabel = `featured project ${title} demo`;
     const repoLinkLabel = `featured project ${title} repo`;
 
     return (
@@ -124,9 +124,9 @@ const FeaturedProjects = ({ featured }) => {
                 </a>
             )}
             {demoLink && (
-                <a href={demoLink} target="_blank" rel="noopener" title="Demo Link" aria-label={demoLinkLabel}>
+
                   <Icon icon="external-link-alt" />
-                </a>
+
             )}
           </StyledProjectTitle>
           <StyledDescription>{duration}</StyledDescription>
@@ -139,11 +139,15 @@ const FeaturedProjects = ({ featured }) => {
 
   return (
     <StyledSection id="projects">
-      <StyledH1>Latest Projects</StyledH1>
+      {/*<StyledH1>Latest Projects</StyledH1>*/}
+      <StyledH1>Projekthistorie</StyledH1>
+      Projekthistorie
       {featuredProjects}
       <StyledArchiveContainer>
-        <StyledA href={cvGerman} target="_blank">Full profile in German  <Icon icon="download" prefix="fas" /></StyledA>
-        <StyledA href={cvGerman} target="_blank">Full profile in English  <Icon icon="download" prefix="fas" /></StyledA>
+        {/*<StyledA href={cvGerman} target="_blank">Full profile in German  <Icon icon="download" prefix="fas" /></StyledA>*/}
+        {/*<StyledA href={cvGerman} target="_blank">Full profile in English  <Icon icon="download" prefix="fas" /></StyledA>*/}
+        <StyledA href={cvGerman} target="_blank">Profil (Deutsch)  <Icon icon="download" prefix="fas" /></StyledA>
+        <StyledA href={cvEnglish} target="_blank">Profil (English)  <Icon icon="download" prefix="fas" /></StyledA>
       </StyledArchiveContainer>
     </StyledSection>
   );
