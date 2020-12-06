@@ -1,10 +1,10 @@
 {
-  "homepage": "https://knochenmark.github.io/gatsby-starter-level-2/",
+  "homepage": "http://pigareva.de",
   "name": "gatsby-starter-level-2",
   "private": true,
-  "description": "A minimalistic starter to quickly set up and configure your portfolio with Gatsby",
+  "description": "A personal page for talented frontend developer",
   "version": "0.1.0",
-  "author": "Knochenmark",
+  "author": "Pigareva",
   "scripts": {
     "deploy": "gatsby build --prefix-paths",
     "build": "gatsby build",
@@ -53,12 +53,5 @@
     "portfolio",
     "blog"
   ],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/knochenmark/gatsby-starter-level-2"
-  },
-  "bugs": {
-    "url": "https://github.com/knochenmark/gatsby-starter-level-2/issues"
-  }
+  "license": "MIT"
 }

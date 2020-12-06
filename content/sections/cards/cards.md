@@ -1,29 +1,41 @@
 ---
 cards:
-  - label: Markdown
-    icon: markdown
-    prefix: fab
-    description: All posts, projects and sections are editable via Markdown files.
-  - label: Customizable
-    icon: palette
+  - label: Web development
+    icon: laptop-code
     prefix: fas
-    description: All theme colors and further properties are adjustable via Css Variables.
-  - label: Configurable
-    icon: cogs
-    prefix: fas
-    description: Navigation and Social links can be easily adjusted via config objects.
-  - label: Projects
-    icon: terminal
-    prefix: fas
-    description: Display your most important projects in a dedicated section or list them on the projects sub page.
-  - label: Components
+    description: JavaScript (ES 6 - 11), TypeScript, React Native, Node.js, PHP
+  - label: React
     icon: react
     prefix: fab
-    description: Plenty of reusable components, mixins and with Emotion styled components are waiting for you.
-  - label: Integrated Blog
-    icon: feather-alt
+    description: Redux, Redux-Saga, Redux Form, Gatsby, react-intl
+  - label: Test automation
+    icon: cogs
     prefix: fas
-    description: Everything you need to start your integrated blog is already in place. Just start writing!
+    description: TestCafe (e2e), Karma, Chai, Sinon, Jest, Enzime, Istanbul
+  - label: HTML/CSS
+    icon: css3
+    prefix: fab
+    description: HTML5, CSS3, LESS, styled-components, Bootstrap, React-Bootstrap, Material UI
+  - label: CI/CD
+    icon: connectdevelop
+    prefix: fab
+    description: Travis, Jenkins, GitLabCI, Webpack, Grunt, Babel	
+  - label: Web services
+    icon: terminal
+    prefix: fas
+    description: REST, AJAX, RPC, Websockets, GraphQL, Protocol buffers
+  - label: Version control
+    icon: code-branch
+    prefix: fas
+    description: Git, GitLab, GitHub, Bitbucket
+  - label: Agile
+    icon: project-diagram
+    prefix: fas
+    description: Scrum, Kanban, JIRA, Confluence, tech documentation
+  - label: Other
+    icon: code
+    prefix: fas
+    description: PWA, Optimizely, User-Labs, Storybook, Algolia  
 ---
 
-This Card-Grid component allows you to display predefined cards. You could use it like us and display features with it or you could also use it to display the services you provide for your customer. Go ahead and adjust the component to your own needs.
+5 years of experience in React and Frontend development

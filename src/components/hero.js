@@ -44,7 +44,7 @@ const StyledTagline = styled.h2`
 const StyledDescription = styled.div`
   margin-top: 0.5rem;
   width: 100%;
-  max-width: 500px;
+  max-width: 800px;
 `;
 
 const Hero = ({ data }) => {

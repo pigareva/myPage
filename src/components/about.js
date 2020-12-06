@@ -5,7 +5,7 @@ import TechList from './tech-list';
 import { mq } from './_shared/media';
 import { StyledH1, StyledH2 } from './_shared/styled-headings';
 import { StyledStaticImageContainer } from './_shared/styled-image-container';
-import { StyledSection } from './_shared/styled-section';
+import StyledSkewedSection from './skewed-section';
 
 const StyledAboutContainer = styled.article`
   display: grid;
@@ -30,7 +30,7 @@ const About = ({ data }) => {
   const image = about_image ? about_image.childImageSharp.fluid : null;
 
   return (
-    <StyledSection id="about">
+    <StyledSkewedSection id="about">
       <StyledH1>About Me</StyledH1>
       <StyledAboutContainer>
         {image && (
@@ -44,7 +44,7 @@ const About = ({ data }) => {
           <TechList techs={techs} />
         </div>
       </StyledAboutContainer>
-    </StyledSection>
+    </StyledSkewedSection>
   );
 };
 

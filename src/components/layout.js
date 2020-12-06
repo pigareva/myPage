@@ -28,7 +28,7 @@ const Layout = ({ children, menuLinks }) => {
   `);
 
   const { author } = data.site.siteMetadata;
-  return (
+    return (
     <React.Fragment>
       <Header menuLinks={menuLinks} />
       <main>{children}</main>
@@ -41,6 +41,7 @@ const Layout = ({ children, menuLinks }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  menuLinks: PropTypes.any.isRequired,
 };
 
 export default Layout;

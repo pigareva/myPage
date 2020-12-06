@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import React from 'react';
-import StyledSkewedSection from './skewed-section';
+import { StyledSection } from './_shared/styled-section';
 import { StyledH1 } from './_shared/styled-headings';
 
 const StyledLogoSection = styled.section`
@@ -44,23 +44,23 @@ const StyledFactNumber = styled.section`
 
 const Facts = () => {
   return (
-    <StyledSkewedSection angle={10}>
-      <StyledH1>Some Interesting Facts</StyledH1>
+    <StyledSection angle={10}>
+      <StyledH1>Studies</StyledH1>
       <StyledLogoSection>
         <StyledFactNumber>
-          <span className="number">127</span>
-          <span className="fact">Finished Projects</span>
+          <span className="number">Master of Science (2008)</span>
+            <span className="fact">Applied Mathematics and Physics</span>
+            <span className="fact">Specialization: Management and System Analysis</span>
+            <span className="fact">Moscow Institute of Physics and Technology (State University)</span>
         </StyledFactNumber>
         <StyledFactNumber>
-          <span className="number">321</span>
-          <span className="fact">Happy Customers</span>
-        </StyledFactNumber>
-        <StyledFactNumber>
-          <span className="number">863</span>
-          <span className="fact">Freelancing Hours</span>
+          <span className="number">Bachelor of Science (2006)</span>
+          <span className="fact">Applied Mathematics and Physics</span>
+          <span className="fact">Specialization: Physical Processes Modeling</span>
+          <span className="fact">Moscow Institute of Physics and Technology (State University)</span>
         </StyledFactNumber>
       </StyledLogoSection>
-    </StyledSkewedSection>
+    </StyledSection>
   );
 };
 

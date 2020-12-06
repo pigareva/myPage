@@ -4,7 +4,7 @@ import React from 'react';
 import Icon from './icon';
 import { mq } from './_shared/media';
 import { StyledH1 } from './_shared/styled-headings';
-import { StyledSection } from './_shared/styled-section';
+import StyledSkewedSection from './skewed-section';
 
 const StyledTextSection = styled.section`
   white-space: pre-line;
@@ -55,7 +55,7 @@ const StyledFeatureDescription = styled.p`
 `;
 
 const CardGrid = ({ cards, description, title, id = null }) => {
-  const featureCards = cards.map(({ icon, prefix, label, description }, index) => {
+    const featureCards = cards.map(({ icon, prefix, label, description }, index) => {
     return (
       <StyledFeatureCard key={index}>
         <Icon icon={icon} prefix={prefix} />
@@ -66,12 +66,14 @@ const CardGrid = ({ cards, description, title, id = null }) => {
     );
   });
 
-  return (
-    <StyledSection id={id}>
+    console.log('id', id);
+
+    return (
+    <StyledSkewedSection id={id}>
       {title && <StyledH1>{title}</StyledH1>}
       <StyledTextSection dangerouslySetInnerHTML={{ __html: description }} />
       <StyledFeatureGridContainer>{featureCards}</StyledFeatureGridContainer>
-    </StyledSection>
+    </StyledSkewedSection>
   );
 };
 

@@ -4,8 +4,9 @@ import Icon from './icon';
 import { mq } from './_shared/media';
 import { StyledH1 } from './_shared/styled-headings';
 import { StyledSection } from './_shared/styled-section';
+import StyledSkewedSection from './skewed-section';
 
-const StyledContactSection = styled(StyledSection)`
+const StyledContactSection = styled(StyledSkewedSection)`
   margin-bottom: 70px;
 `;
 const StyledContainer = styled.section`
@@ -31,7 +32,7 @@ const StyledForm = styled.div`
 const StyledTextSection = styled.section`
   white-space: pre-line;
   width: 100%;
-  max-width: 500px;
+  max-width: 800px;
   margin-left: 3px;
 `;
 const StyledSeparator = styled.div`
@@ -50,20 +51,26 @@ const StyledContacts = styled.div`
     grid-template-columns: repeat(2, 1fr);
   }
   ${mq.gt.sm} {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 `;
 
+const StyledEmail = styled.a`
+      font-size: 0.75rem;
+    font-weight: 500;
+    color: white!important;
+`
+
 const Contact = ({ data }) => {
   const {
-    frontmatter: { phone, email, address },
+    frontmatter: { phone, email, address, header },
     html,
   } = data;
 
   return (
     <React.Fragment>
       <StyledContactSection id="contact">
-        <StyledH1>Contact Details</StyledH1>
+        <StyledH1>{header}</StyledH1>
         <StyledTextSection dangerouslySetInnerHTML={{ __html: html }} />
         <StyledSeparator />
         <StyledContacts>
@@ -71,7 +78,7 @@ const Contact = ({ data }) => {
             <StyledContainer>
               <Icon icon="building" />
               <StyledFormContainer>
-                <StyledForm>Office Location</StyledForm>
+                <StyledForm>Location</StyledForm>
                 <span>{address}</span>
               </StyledFormContainer>
             </StyledContainer>
@@ -80,8 +87,8 @@ const Contact = ({ data }) => {
             <StyledContainer>
               <Icon icon="paper-plane" />
               <StyledFormContainer>
-                <StyledForm>My E-Mail</StyledForm>
-                <span>{email}</span>
+                <StyledForm>E-Mail</StyledForm>
+                <StyledEmail href={`mailto:${email}`}>{email}</StyledEmail>
               </StyledFormContainer>
             </StyledContainer>
           )}

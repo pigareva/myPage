@@ -26,11 +26,13 @@ const Index = ({ data }) => {
     <Layout menuLinks={indexMenuLinks}>
       <SEO title="Home" />
       <Hero data={heroData} />
-      <Facts/>
-      <About data={data.about} />
-      <CardGrid cards={data.cards.frontmatter.cards} description={data.cards.html} title="Our Features" id="features" />
+
+        <CardGrid cards={data.cards.frontmatter.cards} description={data.cards.html} title="Skills" id="skills" />
+
+        {/*<RecentPosts data={data.blog.edges} />*/}
       <FeaturedProjects featured={data.featuredProjects.nodes} />
-      <RecentPosts data={data.blog.edges} />
+        <About data={data.about} />
+        <Facts/>
       <Contact data={data.contact} />
     </Layout>
   );
@@ -95,52 +97,18 @@ export const query = graphql`
       nodes {
         frontmatter {
           date(formatString: "D MMMM, YYYY")
-          title
-          repo_link
+          title 
           demo_link
+          duration
           techs
-          cover_image {
-            childImageSharp {
-              fluid(maxWidth: 800) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
         }
         html
       }
     }
 
-    blog: allMarkdownRemark(
-      sort: { order: DESC, fields: frontmatter___date }
-      limit: 4
-      filter: { fileAbsolutePath: { regex: "/content/posts/" }, frontmatter: { published: { ne: false } } }
-    ) {
-      edges {
-        node {
-          frontmatter {
-            title
-            tags
-            date(formatString: "D MMMM, YYYY")
-            description
-            cover_image {
-              childImageSharp {
-                fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-          excerpt
-          fields {
-            slug
-          }
-        }
-      }
-    }
-
     contact: markdownRemark(fileAbsolutePath: { regex: "/content/sections/contact/" }) {
       frontmatter {
+        header
         phone
         email
         address

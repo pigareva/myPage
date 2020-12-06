@@ -1,18 +1,18 @@
 export const indexMenuLinks = [
   {
-    name: 'About',
-    link: '/#about',
-    icon: 'user-tie',
+    name: 'Skills',
+    link: '/#skills',
+    icon: 'cogs',
   },
   {
     name: 'Projects',
     link: '/#projects',
-    icon: 'terminal',
+    icon: 'laptop-code',
   },
   {
-    name: 'Blog',
-    link: '/#blog',
-    icon: 'feather-alt',
+    name: 'About',
+    link: '/#about',
+    icon: 'user-alt',
   },
   {
     name: 'Contact',
@@ -26,11 +26,6 @@ export const blogMenuLinks = [
     name: 'Portfolio',
     link: '/',
     icon: 'code',
-  },
-  {
-    name: 'Blog',
-    link: '/blog',
-    icon: 'feather-alt',
   },
   {
     name: 'Tags',

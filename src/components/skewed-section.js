@@ -38,20 +38,24 @@ const StyledSkewedSection = styled.section`
 
 const SkewedSection = (props) => {
   console.log('angle', props.angle);
-
+  const {id, children} = props;
   return (
-    <StyledSkewedSection>
-      <div className="content">{props.children}</div>
+    <StyledSkewedSection id={id} >
+      <div className="content">{children}</div>
     </StyledSkewedSection>
   );
 };
 
 SkewedSection.propTypes = {
   angle: PropTypes.number,
+  id: PropTypes.string,
+  children: PropTypes.node,
 };
 
 SkewedSection.defaultProps = {
   angle: 10,
+  id: null,
+  children: null,
 };
 
 export default SkewedSection;

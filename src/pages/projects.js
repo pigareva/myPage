@@ -21,7 +21,7 @@ const Projects = ({
     <Layout menuLinks={blogMenuLinks}>
       <SEO title="Projects" />
       <StyledFullHeightSection>
-        <StyledProjectsH1>Projects</StyledProjectsH1>
+        <StyledProjectsH1>Latest Projects</StyledProjectsH1>
         <StyledSeparator />
         <ProjectList projects={nodes} />
       </StyledFullHeightSection>
@@ -41,7 +41,6 @@ export const pageQuery = graphql`
         frontmatter {
           date(formatString: "D MMMM, YYYY")
           title
-          repo_link
           demo_link
           techs
         }

@@ -1,13 +1,13 @@
 module.exports = {
   pathPrefix: '/gatsby-starter-level-2',
   siteMetadata: {
-    title: 'Level 2',
-    titleTemplate: '%s · Level 2',
+    title: 'Frontend Developer Olga Pigareva',
+    titleTemplate: '%s · Pigareva',
     image: '/images/logo.png',
-    author: 'Max Mustermann',
-    description: 'Gatsby starter to quickly setup your portfolio and boost it to the next level.',
-    url: 'https://knochenmark.github.io',
-    paginationPageSize: 4, // Amount of posts displayed per listing page.
+    author: 'Olga Pigareva',
+    description: 'Frontend (React.js) developer with strong technical background and 8 years’ experience in project management',
+    url: 'http://www.pigareva.de/',
+    paginationPageSize: 4, // TODO Amount of posts displayed per listing page.
   },
   plugins: [
     `gatsby-plugin-stylus`,
