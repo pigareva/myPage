@@ -2,7 +2,8 @@
 featured: true
 date: '2020-12-31'
 duration: '09.2020 - 01.2021'
-title: 'Online Übersetzer'
+title: 'Weiterentwicklung einer Frontend-Anwendung für eine NLP Software, die
+         automatisch Übersetzungen durchführt'
 demo_link: 'https://deepl.com'
 techs: [ 'React', 'JavaScript (ES6 - 11)', 'Gatsby', 'Webpack', 'Babel', 'HTML5', 'CSS3', 'LESS', 'Protocol buffers',
         'RPC', 'git', 'GitLab', 'Docker', 'Jenkins', 'PHP', 'TestCafe']

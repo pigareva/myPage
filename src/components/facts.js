@@ -45,7 +45,7 @@ const StyledFactNumber = styled.section`
 const Facts = () => {
   return (
     <StyledSection angle={10}>
-      <StyledH1>Studies</StyledH1>
+      <StyledH1>Studium</StyledH1>
       <StyledLogoSection>
         <StyledFactNumber>
           <span className="number">Master of Science (2008)</span>

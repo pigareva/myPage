@@ -101,6 +101,10 @@ const StyledProjectTitle = styled(StyledContentLink)`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+    > h2 {
+      margin-right: 2rem;
+    }
 `
 
 const FeaturedProjects = ({ featured }) => {
@@ -141,7 +145,6 @@ const FeaturedProjects = ({ featured }) => {
     <StyledSection id="projects">
       {/*<StyledH1>Latest Projects</StyledH1>*/}
       <StyledH1>Projekthistorie</StyledH1>
-      Projekthistorie
       {featuredProjects}
       <StyledArchiveContainer>
         {/*<StyledA href={cvGerman} target="_blank">Full profile in German  <Icon icon="download" prefix="fas" /></StyledA>*/}

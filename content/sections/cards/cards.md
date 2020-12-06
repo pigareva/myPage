@@ -38,4 +38,4 @@ cards:
     description: PWA, Optimizely, User-Labs, Storybook, Algolia  
 ---
 
-5 years of experience in React and Frontend development
+5 Jahres Erfahrung im React und Frontend Entwicklung
