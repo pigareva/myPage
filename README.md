@@ -1,1 +1,1 @@
-www.pigareva.de
+pigareva.de
