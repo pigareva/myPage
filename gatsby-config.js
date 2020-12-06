@@ -13,6 +13,12 @@ module.exports = {
     `gatsby-plugin-stylus`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "pigareva-bucket",
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

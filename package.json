@@ -6,7 +6,7 @@
   "version": "0.1.0",
   "author": "Pigareva",
   "scripts": {
-    "deploy": "gatsby build --prefix-paths",
+    "deploy": "gatsby-plugin-s3 deploy",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
@@ -28,6 +28,7 @@
     "gatsby-plugin-offline": "^3.2.30",
     "gatsby-plugin-react-helmet": "^3.3.12",
     "gatsby-plugin-react-svg": "^3.0.0",
+    "gatsby-plugin-s3": "^0.3.8",
     "gatsby-plugin-sharp": "^2.6.38",
     "gatsby-plugin-stylus": "^2.3.12",
     "gatsby-remark-images": "^3.3.32",
