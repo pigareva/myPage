@@ -1,7 +1,7 @@
 ---
 introduction: ""
-tagline: 'react.js developer'
-cta_label: 'Hire me'
+tagline: 'react.js freelancer'
+cta_label: 'Zum Kontakt'
 cta_link: '/#contact'
 ---
 
