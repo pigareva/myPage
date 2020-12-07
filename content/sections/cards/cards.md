@@ -3,7 +3,7 @@ cards:
   - label: Web development
     icon: laptop-code
     prefix: fas
-    description: JavaScript (ES 6 - 11), TypeScript, React Native, Node.js, PHP
+    description: JavaScript (ES 6 - 11), TypeScript, React Native, Node.js, PHP, MySQL, MongoDB (Mongoose)
   - label: React
     icon: react
     prefix: fab
